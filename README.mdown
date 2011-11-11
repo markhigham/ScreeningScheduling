@@ -1,0 +1,46 @@
+# NICE Screening test
+
+As part of a scheduling system, we need to be able to determine the order to execute dependent tasks.
+
+Tasks are identified by a lowercase word. Dependencies between tasks are denoted using a => b where a is the dependent task and b is the dependency.
+
+When a task is dependent on one or more other tasks, those tasks must be executed first. If a task has no dependencies it is executed in the order that it has been declared. If a cyclic dependency is used, the system must detect it as an error and not enter an invalid state.
+
+We estimate that there will never be more than 50 tasks at a time.
+
+# Acceptance criteria
+
+```
+tasks : []
+dependencies: []
+result: []
+
+tasks: [a,b]
+dependencies: []
+result: [a,b]
+
+tasks: [a,b]
+dependencies: [a => b]
+result: [b,a]
+
+tasks: [a,b,c,d]
+dependencies: [a => b,c => d]
+result: [b,a,d,c]
+
+tasks: [a,b,c]
+dependencies: [a => b,b => c]
+result: [c,b,a]
+
+tasks: [a,b,c,d]
+dependencies: [a => b,b => c,a => c]
+result: Error - this is a cyclic dependency
+```
+
+# Instructions
+
+* Implement a solution in the language of your choice and _prove_ that it meets the acceptance criteria.
+* The supplied solution must compile (if required) and run on Windows 7.
+* Submit your solutions by emailing a zip file to edward.hiley@nice.org.uk with the subject 'test submission November 2011'.
+
+
+
