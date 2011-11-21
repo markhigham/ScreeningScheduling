@@ -32,7 +32,7 @@ dependencies: [a => b,b => c]
 result: [c,b,a]
 
 tasks: [a,b,c,d]
-dependencies: [a => b,b => c,a => c]
+dependencies: [a => b,b => c,c => a]
 result: Error - this is a cyclic dependency
 ```
 
