@@ -1,6 +1,6 @@
 # NICE Developer -- screening task
 
-As part of a scheduling system, we need to be able to determine the order to execute dependent tasks.
+As part of a scheduling system, we need to be able to determine the order to execute dependent tasks after parsing their definitions.
 
 Tasks are identified by a lowercase word. Dependencies between tasks are denoted using a => b where _a_ is a task that is dependent on _b_.
 
