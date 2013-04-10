@@ -40,7 +40,7 @@ result: Error - this is a cyclic dependency
 
 * Implement a solution in the language of your choice and _prove_ that it meets the acceptance criteria.
 * The supplied solution must compile (if required) and run on Windows 7.
-* Submit your solutions by emailing a zip file by replying to your interview invite email.
+* Submit your solutions by emailing a zip file to your agency.
 
 
 
